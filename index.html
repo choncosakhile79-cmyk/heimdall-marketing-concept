@@ -310,9 +310,9 @@ body[data-theme="dark"] .heimdall-chat-form input{background:#102d4e;color:#edf6
 <div class="demo-hint"><strong>Demo data only.</strong> No live ambulances, actual patients, real bed availability, or emergency dispatch is connected. Do not enter real patient information.</div>
 </div>
 </section>
-<section class="section map-section" id="map"><div class="section-head"><div class="kicker">Area overview</div><h2>Johannesburg satellite map</h2><p>The map opens in satellite imagery by default. Case pins show approximate demo area locations only, not a patient’s actual live GPS position.</p></div>
-<div class="map-layout"><div class="map-copy"><h3>Johannesburg region</h3><p>Explore the city in satellite view and switch to a standard street map when you need clearer road labels.</p>
-<div class="map-controls"><button id="satBtn" class="active" onclick="setMapLayer('satellite')">Satellite imagery (default)</button><button id="streetBtn" onclick="setMapLayer('street')">Street view</button></div>
+<section class="section map-section" id="map"><div class="section-head"><div class="kicker">Area overview</div><h2>Johannesburg satellite map</h2><p>The map opens in street view for clearer road labels, with satellite imagery available as an alternative. Case pins show approximate demo area locations only, not a patient’s actual live GPS position.</p></div>
+<div class="map-layout"><div class="map-copy"><h3>Johannesburg region</h3><p>Explore Johannesburg in street view, or switch to satellite imagery. Sample pins are illustrative only.</p>
+<div class="map-controls"><button id="satBtn" onclick="setMapLayer('satellite')">Satellite imagery</button><button id="streetBtn" class="active" onclick="setMapLayer('street')">Street view (default)</button></div>
 <p><strong>Demo markers</strong></p><p>🚑 Ambulance A — illustrative location<br>🏥 Sample hospital<br>⚠️ Sample incident</p>
 <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Johannesburg%2C%20South%20Africa" target="_blank" rel="noopener">Open Google Maps ↗</a><hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
 <p class="map-note">Satellite tiles are provided by Esri World Imagery; street tiles are provided by OpenStreetMap contributors. Internet access is required. Tile-provider terms and attribution apply.</p><p class="map-note"><b>For production:</b> live vehicle locations and dispatch details require authorised, secure EMS integrations.</p></div>
