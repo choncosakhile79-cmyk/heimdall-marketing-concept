@@ -1,0 +1,7 @@
+{
+  "name": "heimdall-ems-concept",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Heimdall EMS student concept with an AI FAQ assistant",
+  "engines": { "node": ">=20" }
+}
