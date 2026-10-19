@@ -12,6 +12,10 @@ A responsive front-end concept for Heimdall, presented as an EMS portal similar 
 - External Google Maps shortcut
 - Contact form preview
 - Responsive mobile layout
+- **Light / dark mode** toggle (sun/moon button in the navigation, remembered between visits)
+- **Moving ECG waveform** across the whole website, with a pause/resume button (heart icon) and a small demo BPM badge
+- Creative animations: animated hero, heartbeat accents, ambulance driving along the route preview, scroll-reveal, 3D tilt and glow on role cards, button shine, scroll progress bar
+- Animations switch off automatically for visitors who prefer reduced motion
 
 ## Medical aid status on emergency cases
 
@@ -35,6 +39,7 @@ The value is chosen by whoever creates the case. It is **not** verified against 
 ## Change log
 
 - Added a **Medical aid** (Active / Not active / Unknown) field to the emergency case form, and a **Medical aid** column in the case tables for all four roles
+- Added light/dark mode, the site-wide ECG waveform and the animations (all inside `index.html`, no new files)
 - Fixed the ID number field's validation pattern, which modern browsers reported as an invalid regular expression
 
 ## Important limitations
