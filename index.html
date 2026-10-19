@@ -198,7 +198,7 @@ body{overflow-x:hidden}
 @keyframes fade-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 .pulse,.demo-live-dot,.vitals-dot{animation:status-pulse 2s ease-out infinite}
 @keyframes status-pulse{0%{box-shadow:0 0 0 0 #55e8ba65}70%{box-shadow:0 0 0 8px #55e8ba00}100%{box-shadow:0 0 0 0 #55e8ba00}}
-.btn,.nav-cta,.theme-control,.role-card,.map-controls button{transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,border-color .22s ease}
+.btn,.nav-cta,.role-card,.map-controls button{transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,border-color .22s ease}
 .btn:hover,.nav-cta:hover{transform:translateY(-3px);box-shadow:0 12px 26px #0756c92b}
 .btn:active,.nav-cta:active{transform:translateY(0) scale(.98)}
 .navlinks a{position:relative}
@@ -231,30 +231,6 @@ body{overflow-x:hidden}
 :focus-visible{outline:3px solid #36bdf2!important;outline-offset:3px}
 @media(max-width:620px){.dashboard-card{animation:dashboard-float 7s 1s ease-in-out infinite}.innovation-card:hover,.role-card:hover{transform:translateY(-2px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.motion-ready .reveal-on-scroll{opacity:1;transform:none}.innovation-card:hover,.role-card:hover,.btn:hover,.nav-cta:hover{transform:none}}
-
-
-/* Heimdall helper chatbot with a glowing blue ECG heartbeat */
-.heimdall-chat-launch{position:fixed;right:24px;bottom:24px;z-index:1500;width:82px;height:82px;border:2px solid #53dfff;border-radius:50%;padding:0;background:radial-gradient(circle at 35% 25%,#1d83f5,#082c70 70%);box-shadow:0 0 0 5px #29c5ef20,0 0 22px #16baffaa,0 0 48px #0873ff55;color:white;cursor:pointer;display:grid;place-items:center;animation:heimdall-pulse 2s ease-in-out infinite;transition:transform .2s ease,box-shadow .2s ease}
-.heimdall-chat-launch:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 0 0 7px #29c5ef24,0 0 30px #16baffdd,0 0 60px #0873ff77}.heimdall-chat-launch .doctor-avatar{position:absolute;top:4px;left:0;right:0;font-size:34px;line-height:1.15;filter:drop-shadow(0 0 7px #7aeaff)}.heimdall-chat-launch svg{position:absolute;left:9px;right:9px;bottom:17px;width:60px;height:24px;overflow:visible;opacity:.96}.heimdall-chat-launch path{fill:none;stroke:#aaf4ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:130;stroke-dashoffset:130;filter:drop-shadow(0 0 4px #44eaff);animation:heimdall-ecg 2.1s linear infinite}.heimdall-chat-launch .chat-bubble-icon{font-size:8px;letter-spacing:1px;font-weight:900;position:absolute;bottom:5px;color:#dffbff;text-shadow:0 0 8px #38dfff}.heimdall-chat-head .doctor-head-avatar{font-size:28px;line-height:1}
-@keyframes heimdall-ecg{0%{stroke-dashoffset:130;opacity:.4}15%{opacity:1}72%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:-130;opacity:.55}}@keyframes heimdall-pulse{0%,100%{box-shadow:0 0 0 4px #29c5ef20,0 0 22px #16baff99,0 0 45px #0873ff44}50%{box-shadow:0 0 0 9px #29c5ef10,0 0 30px #16baffcc,0 0 60px #0873ff66}}
-.heimdall-chat-panel{position:fixed;right:24px;bottom:112px;z-index:1500;width:min(370px,calc(100vw - 28px));height:min(520px,calc(100dvh - 145px));display:none;flex-direction:column;overflow:hidden;border:1px solid #2b8cdb;border-radius:20px;background:#f8fbff;color:#173452;box-shadow:0 20px 70px #001e4b55;transform-origin:bottom right}.heimdall-chat-panel.open{display:flex;animation:heimdall-chat-in .24s ease-out both}@keyframes heimdall-chat-in{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-.heimdall-chat-head{display:flex;align-items:center;gap:12px;padding:15px;background:linear-gradient(120deg,#063c93,#087ed6,#08bce9);color:white}.heimdall-chat-head .chat-head-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid #ffffff66;border-radius:14px;background:#ffffff19;box-shadow:0 0 18px #63e9ff66}.heimdall-chat-head strong,.heimdall-chat-head small{display:block}.heimdall-chat-head strong{font-size:14px}.heimdall-chat-head small{font-size:11px;color:#d4f5ff;margin-top:3px}.heimdall-chat-close{margin-left:auto;border:0;background:#ffffff1f;color:white;border-radius:10px;width:34px;height:34px;font-size:21px;cursor:pointer}.heimdall-chat-status{display:inline-block;width:7px;height:7px;border-radius:50%;background:#5effbd;box-shadow:0 0 9px #5effbd;margin-right:5px}.heimdall-chat-messages{padding:15px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;background:radial-gradient(ellipse at top right,#e4f7ff 0,transparent 65%),#f8fbff}.heimdall-chat-msg{max-width:90%;padding:11px 12px;border-radius:14px;font-size:12px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}.heimdall-chat-msg.bot{align-self:flex-start;background:white;border:1px solid #dceafb;border-top-left-radius:4px}.heimdall-chat-msg.user{align-self:flex-end;background:linear-gradient(130deg,#0966d4,#058bd8);color:white;border-top-right-radius:4px}.heimdall-chat-quick{display:flex;gap:7px;flex-wrap:wrap;padding:10px 12px 2px;background:white}.heimdall-chat-quick button{border:1px solid #b8ddfb;border-radius:99px;background:#f1f8ff;color:#0756a7;padding:7px 10px;font-size:10px;font-weight:800;cursor:pointer}.heimdall-chat-form{display:flex;gap:8px;padding:12px;background:white;border-top:1px solid #dceafb}.heimdall-chat-form input{min-width:0;flex:1;border:1px solid #cbdced;border-radius:12px;padding:11px 12px;font-size:12px;color:#173452;outline:none}.heimdall-chat-form input:focus{border-color:#0786e8;box-shadow:0 0 0 3px #0786e81c}.heimdall-chat-form button{width:43px;border:0;border-radius:12px;background:linear-gradient(130deg,#0756c9,#09b7e7);color:white;font-size:19px;cursor:pointer}.heimdall-chat-note{padding:0 13px 10px;background:white;color:#6d829b;font-size:9px;line-height:1.4}.heimdall-chat-launch:focus-visible,.heimdall-chat-close:focus-visible,.heimdall-chat-form button:focus-visible{outline:3px solid #80eaff;outline-offset:4px}
-@media(max-width:480px){.heimdall-chat-launch{right:16px;bottom:16px;width:68px;height:68px}.heimdall-chat-panel{right:12px;bottom:94px;width:calc(100vw - 24px);height:min(500px,calc(100dvh - 120px))}}@media(prefers-reduced-motion:reduce){.heimdall-chat-launch,.heimdall-chat-launch path,.heimdall-chat-panel.open{animation:none!important}}
-
-/* Consistent theme colours across the entire interface */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </style>
@@ -411,11 +387,6 @@ function printHandoverSummary(){const c=emergencyCases[0];const w=window.open(''
 #mapCanvas{display:block!important;position:relative;min-height:430px;height:clamp(430px,55vh,620px);width:100%;visibility:visible!important;opacity:1!important;overflow:hidden;z-index:1}
 #mapCanvas .leaflet-pane,#mapCanvas .leaflet-control-container{visibility:visible}
 .map-section,.map-layout,.map-copy{min-width:0}
-.heimdall-chat-launch{z-index:3000!important;pointer-events:auto!important}
-.heimdall-chat-panel{z-index:3001!important;pointer-events:auto}
-.heimdall-chat-panel.open{display:flex!important;visibility:visible;opacity:1;pointer-events:auto}
-.heimdall-chat-form input{min-width:0}
-.heimdall-chat-form button:disabled{opacity:.55;cursor:wait}
 
 
 
@@ -425,7 +396,12 @@ function printHandoverSummary(){const c=emergencyCases[0];const w=window.open(''
 
 
 
-@media(max-width:620px){#mapCanvas{min-height:360px;height:55vh}.heimdall-chat-panel{max-width:calc(100vw - 24px);right:12px;bottom:86px}}
+
+
+
+
+
+@media(max-width:620px){#mapCanvas{min-height:360px;height:55vh}}
 
 </style></head><body><h1>Heimdall EMS · Demo handover</h1><p><b>Fictional case:</b> '+escapeHtml(c.caseId)+'</p><p><b>Patient:</b> '+escapeHtml(c.name+' '+c.surname)+' (demo only)</p><p><b>Area:</b> '+escapeHtml(c.address)+'</p><p><b>Priority:</b> '+escapeHtml(c.priority)+'</p><p><b>Medical aid:</b> '+escapeHtml(c.medAid)+' (unverified demo value)</p><h2>Handover checklist</h2><ul><li>Patient details prepared</li><li>Receiving team notified</li><li>Handover acknowledged</li></ul><p class="note">Fictional student prototype output. Not a clinical record. Do not use for real care or enter real patient data.</p><script>window.onload=()=>window.print()<\/script>
 </body></html>');w.document.close()}
