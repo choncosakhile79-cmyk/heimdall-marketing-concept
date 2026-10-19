@@ -131,50 +131,49 @@ body{background:#f7faff;letter-spacing:.005em}
 /* User-selectable Heimdall themes: light and deep-navy dark */
 :root{color-scheme:light;--page-bg:#f7faff;--surface:#fff;--surface-soft:#eff6ff;--text-main:#132b49;--text-muted:#60748f;--border-main:#dbe7f5;--heading-main:#071d3a}
 body{background:var(--page-bg);color:var(--text-main);transition:background-color .22s,color .22s}
-.theme-control{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--pale);color:var(--blue);font-size:12px;font-weight:800;white-space:nowrap}
-.theme-control .theme-symbol{font-size:16px;line-height:1}
-.theme-control:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
-body[data-theme="dark"]{color-scheme:dark;--page-bg:#07172b;--surface:#0c2340;--surface-soft:#102d4e;--text-main:#e3efff;--text-muted:#a8bfdc;--border-main:#24466d;--heading-main:#edf6ff;background:var(--page-bg);color:var(--text-main)}
-body[data-theme="dark"] .navbar{background:#081b33;border-color:#24466d}
-body[data-theme="dark"] .brand{color:#f0f7ff}
-body[data-theme="dark"] .brand small,body[data-theme="dark"] .navlinks{color:#b7cce5}
-body[data-theme="dark"] .navlinks a:hover{color:#69dcff}
-body[data-theme="dark"] .theme-control{background:#102d4e;border-color:#315779;color:#8fe4ff}
-body[data-theme="dark"] .trustbar{background:#24466d;border-color:#24466d}
-body[data-theme="dark"] .trust-item{background:#0c2340}
-body[data-theme="dark"] .trust-item strong,body[data-theme="dark"] .section h2,body[data-theme="dark"] .about-copy h2{color:#edf6ff}
-body[data-theme="dark"] .trust-item span,body[data-theme="dark"] .section-head p,body[data-theme="dark"] .about-copy p{color:#a8bfdc}
-body[data-theme="dark"] .role-card,body[data-theme="dark"] .map-copy,body[data-theme="dark"] .panel,body[data-theme="dark"] .innovation-card{background:#0c2340;border-color:#24466d;color:#e3efff}
-body[data-theme="dark"] .role-card h3,body[data-theme="dark"] .innovation-card h3,body[data-theme="dark"] .map-copy h3,body[data-theme="dark"] .panel-head h3{color:#edf6ff}
-body[data-theme="dark"] .role-card p,body[data-theme="dark"] .role-card ul,body[data-theme="dark"] .checkline,body[data-theme="dark"] .innovation-card>p,body[data-theme="dark"] .dispatch-main strong{color:#bfd2e9}
-body[data-theme="dark"] .role-icon,body[data-theme="dark"] .innovation-icon{background:#153b63;color:#76dcff}
-body[data-theme="dark"] .map-section,body[data-theme="dark"] .innovation-section{background:linear-gradient(180deg,#0a203b,#0b2747)}
-body[data-theme="dark"] .case-form,body[data-theme="dark"] .credential,body[data-theme="dark"] .portal-stat,body[data-theme="dark"] .demo-hint{background:#102d4e;border-color:#24466d;color:#c3d8ef}
-body[data-theme="dark"] .field label,body[data-theme="dark"] .case-form .field label{color:#c3d8ef}
-body[data-theme="dark"] .field input,body[data-theme="dark"] .field select,body[data-theme="dark"] .case-form .field input,body[data-theme="dark"] .case-form .field select,body[data-theme="dark"] .case-form .field textarea,body[data-theme="dark"] .status-select,body[data-theme="dark"] .dispatch-row select,body[data-theme="dark"] .fleet-list select,body[data-theme="dark"] .verification-demo select{background:#091c34;border-color:#315779;color:#e3efff}
-body[data-theme="dark"] .demo-table th{background:#102d4e;color:#c3d8ef}
-body[data-theme="dark"] .demo-table th,body[data-theme="dark"] .demo-table td,body[data-theme="dark"] .panel-head,body[data-theme="dark"] .dispatch-row{border-color:#24466d}
-body[data-theme="dark"] .portal-stat small,body[data-theme="dark"] .case-note,body[data-theme="dark"] .innovation-foot{color:#a8bfdc}
-body[data-theme="dark"] .section .kicker{color:#69dcff}
-body[data-theme="dark"] .about-visual{background:linear-gradient(145deg,#061a35,#0756a8)}
-body[data-theme="dark"] .map-controls button{background:#102d4e;border-color:#315779;color:#8fe4ff}
-body[data-theme="dark"] .map-controls button.active{background:#0756c9;color:#fff}
-body[data-theme="dark"] .vitals-strip{background:#102d4e;border-color:#24466d}
-body[data-theme="dark"] .vitals-label{color:#b7cce5}
-body[data-theme="dark"] .dispatch-toolbar{border-color:#24466d;color:#c3d8ef}
-body[data-theme="dark"] .demo-pill{background:#153b63;color:#8fe4ff}
-body[data-theme="dark"] .med-aid-active{background:#103f3a;color:#75e8c5}
-body[data-theme="dark"] .med-aid-inactive{background:#492432;color:#ff9ca9}
-body[data-theme="dark"] .med-aid-pending{background:#4a3b20;color:#ffd37b}
-body[data-theme="dark"] .panel .pill{background:#103f3a;color:#75e8c5}
-body[data-theme="dark"] .map-note{color:#a8bfdc}
-body[data-theme="dark"] .contact-card{background:#0b2545;border-color:#315779}
-body[data-theme="dark"] .contact-card input,body[data-theme="dark"] .contact-card textarea,body[data-theme="dark"] .contact-card select{background:#102d4e;color:#e3efff;border-color:#315779}
-body[data-theme="dark"] .contact-card option{background:#102d4e;color:#e3efff}
-body[data-theme="dark"] .footer{background:#030d1c;border-color:#24466d}
-body[data-theme="dark"] .map-copy,#mapCanvas{color:var(--text-main)}
-@media(max-width:900px){.theme-control{margin-left:auto}}
-@media(max-width:620px){.theme-control{order:2;padding:8px 10px}.nav-cta{order:2}.navbar{column-gap:9px}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){}
+@media(max-width:620px){.nav-cta{order:2}.navbar{column-gap:9px}}
 
 
 /* Motion refresh: energetic but accessible */
@@ -243,28 +242,27 @@ body{overflow-x:hidden}
 @media(max-width:480px){.heimdall-chat-launch{right:16px;bottom:16px;width:68px;height:68px}.heimdall-chat-panel{right:12px;bottom:94px;width:calc(100vw - 24px);height:min(500px,calc(100dvh - 120px))}}@media(prefers-reduced-motion:reduce){.heimdall-chat-launch,.heimdall-chat-launch path,.heimdall-chat-panel.open{animation:none!important}}
 
 /* Consistent theme colours across the entire interface */
-body[data-theme="dark"] .section{background-color:transparent}
-body[data-theme="dark"] .section:not(.hero):not(.map-section):not(.contact-section):not(.innovation-section){background-color:#07172b}
-body[data-theme="dark"] .section-head p,body[data-theme="dark"] .about-copy p,body[data-theme="dark"] .map-copy p,body[data-theme="dark"] .map-note,body[data-theme="dark"] .case-note,body[data-theme="dark"] .innovation-foot{color:#b4c9e3}
-body[data-theme="dark"] .demo-table th{background:#102d4e;color:#d7e8fb}
-body[data-theme="dark"] .demo-table td{color:#d7e8fb;border-color:#24466d}
-body[data-theme="dark"] .demo-table,body[data-theme="dark"] .table-wrap{background:#0c2340}
-body[data-theme="dark"] .field input,body[data-theme="dark"] .field select,body[data-theme="dark"] .contact-card input,body[data-theme="dark"] .contact-card textarea,body[data-theme="dark"] .contact-card select{background:#102d4e;color:#edf6ff;border-color:#315779}
-body[data-theme="dark"] .contact-card label{color:#d7e8fb}
-body[data-theme="dark"] .footer{background:#041020}
-body[data-theme="dark"] .story-copy,body[data-theme="dark"] .story-caption,body[data-theme="dark"] .story-copy p{color:#d7e8fb}
-body[data-theme="dark"] .heimdall-chat-panel{background:#0c2340;color:#e3efff;border-color:#315779}
-body[data-theme="dark"] .heimdall-chat-messages,body[data-theme="dark"] .heimdall-chat-note{background:#0c2340;color:#bfd2e9}
-body[data-theme="dark"] .heimdall-chat-msg.bot{background:#153b63;color:#edf6ff}
-body[data-theme="dark"] .heimdall-chat-form{background:#102d4e;border-color:#315779}
-body[data-theme="dark"] .heimdall-chat-form input{background:#102d4e;color:#edf6ff}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
 <header class="navbar">
 <a class="brand" href="#home"><span class="brand-icon" aria-hidden="true"><svg class="brand-ecg" viewBox="0 0 48 32" role="img" aria-label="Heartbeat waveform"><path d="M2 17H11L16 7L22 26L28 12L32 17H46"/></svg></span><span>HEIMDALL<small>EMERGENCY MEDICAL SERVICES</small></span></a>
 <nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#map">Johannesburg Map</a><a href="#operations-suite">Features</a><a href="#contact">Contact</a></nav>
-<button class="theme-control" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-symbol" id="themeSymbol" aria-hidden="true">☾</span><span id="themeLabel">Dark mode</span></button>
 <a class="nav-cta" href="#portal">Open Portal ↗</a>
 </header>
 <main>
@@ -311,8 +309,8 @@ body[data-theme="dark"] .heimdall-chat-form input{background:#102d4e;color:#edf6
 </div>
 </section>
 <section class="section map-section" id="map"><div class="section-head"><div class="kicker">Area overview</div><h2>Johannesburg satellite map</h2><p>The map opens in street view for clearer road labels, with satellite imagery available as an alternative. Case pins show approximate demo area locations only, not a patient’s actual live GPS position.</p></div>
-<div class="map-layout"><div class="map-copy"><h3>Johannesburg region</h3><p>Explore Johannesburg in street view, or switch to satellite imagery. Sample pins are illustrative only.</p>
-<div class="map-controls"><button id="satBtn" onclick="setMapLayer('satellite')">Satellite imagery</button><button id="streetBtn" class="active" onclick="setMapLayer('street')">Street view (default)</button></div>
+<div class="map-layout"><div class="map-copy"><h3>Johannesburg region</h3><p>Explore Johannesburg in satellite imagery, or switch to the street map. Sample pins are illustrative only.</p>
+<div class="map-controls"><button id="satBtn" class="active" onclick="setMapLayer('satellite')">Satellite imagery</button><button id="streetBtn" onclick="setMapLayer('street')">Street map</button><button id="resetMapBtn" onclick="resetJohannesburgMap()">Reset Johannesburg map</button></div>
 <p><strong>Demo markers</strong></p><p>🚑 Ambulance A — illustrative location<br>🏥 Sample hospital<br>⚠️ Sample incident</p>
 <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Johannesburg%2C%20South%20Africa" target="_blank" rel="noopener">Open Google Maps ↗</a><hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
 <p class="map-note">Satellite tiles are provided by Esri World Imagery; street tiles are provided by OpenStreetMap contributors. Internet access is required. Tile-provider terms and attribution apply.</p><p class="map-note"><b>For production:</b> live vehicle locations and dispatch details require authorised, secure EMS integrations.</p></div>
@@ -348,10 +346,7 @@ body[data-theme="dark"] .heimdall-chat-form input{background:#102d4e;color:#edf6
   <article class="innovation-card innovation-wide"><div class="innovation-top"><span class="innovation-icon">⌑</span><span class="innovation-tag">07 · PRIVACY & ACCOUNTABILITY</span></div><h3>Built-in privacy and activity trail</h3><p>Role-based access, minimal data exposure, timestamped changes and a reviewable audit trail should underpin the production version.</p>
    <div class="audit-log" id="auditLog"><div><time>Demo start</time><span>Sample environment opened</span><b>System</b></div><div><time>Demo event</time><span>Case HD-205 marked as dispatched</span><b>Dispatcher</b></div><div><time>Demo event</time><span>Hospital handover checklist viewed</span><b>Hospital team</b></div></div><p class="innovation-foot">This visual activity trail is illustrative, not a secure or persistent audit log. Production use requires authenticated access, access controls, secure storage and POPIA-aligned governance.</p>
   </article>
-  <article class="innovation-card innovation-wide walkthrough-card"><div class="innovation-top"><span class="innovation-icon">▶</span><span class="innovation-tag">08 · SIGNATURE EXPERIENCE</span></div><h3>Follow one fictional emergency</h3><p>Use the controls to walk through a sample incident from first report to hospital handover.</p>
-   <div class="story-stage"><div class="story-number" id="storyNumber">01</div><div class="story-media-layout"><div><div class="story-photo-frame"><img id="storyImage" src="https://images.unsplash.com/photo-1587745416684-47953f16f02f?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Illustrative emergency ambulance photograph" loading="lazy"><span class="story-photo-label" id="storyImageLabel">1 · CALL RECEIVED · FICTIONAL SCENARIO</span></div><small class="story-caption">Visual reference only. No real patient or live incident is shown.</small></div><div class="story-copy"><small id="storyKicker">STEP 1 OF 5</small><h4 id="storyTitle">Emergency received</h4><p id="storyText">A fictional call is logged in the dispatch queue with an initial priority and Johannesburg area.</p><div class="story-photo-credit">Photo: Unsplash · illustrative stock imagery</div></div></div></div>
-   <div class="story-controls"><button class="btn btn-soft" type="button" onclick="moveStory(-1)">← Previous</button><div class="story-dots" id="storyDots"><span class="active"></span><span></span><span></span><span></span><span></span></div><button class="btn" type="button" onclick="moveStory(1)">Next step →</button></div>
-  </article>
+  
 
   <article class="innovation-card"><div class="innovation-top"><span class="innovation-icon">♧</span><span class="innovation-tag">09 · NOTIFICATIONS</span></div><h3>Notifications centre</h3><p>Review simulated alerts for new emergencies, high-priority cases, ambulance assignments, medical-aid verification and incoming hospital handovers.</p><div class="notification-list" id="notificationList"><div class="notification-item unread"><span class="notification-dot"></span><div><strong>High-priority case received</strong><small>Rosebank · Demo alert · 2 min ago</small></div><button class="btn btn-soft" type="button" onclick="markNotificationRead(this)">Mark read</button></div><div class="notification-item unread"><span class="notification-dot"></span><div><strong>Ambulance assignment updated</strong><small>AMB-02 · Demo alert · 5 min ago</small></div><button class="btn btn-soft" type="button" onclick="markNotificationRead(this)">Mark read</button></div><div class="notification-item"><span class="notification-dot"></span><div><strong>Hospital handover received</strong><small>Central receiving · Demo alert</small></div><span class="read-label">Read</span></div></div><p class="innovation-foot" id="notificationSummary" aria-live="polite">2 unread notifications · simulated only</p><button class="btn" type="button" onclick="markAllNotificationsRead()">Mark all as read</button></article>
   <article class="innovation-card"><div class="innovation-top"><span class="innovation-icon">◷</span><span class="innovation-tag">10 · CASE TIMELINE</span></div><h3>Emergency timeline and audit history</h3><p>Track each demo incident through creation, assignment, dispatch, arrival, transport and hospital handover, with an illustrative actor and timestamp.</p><label class="feature-label" for="timelineCase">Choose demo case</label><select id="timelineCase" onchange="renderCaseTimeline()"><option value="DEMO-101">DEMO-101 · Braamfontein</option><option value="DEMO-104">DEMO-104 · Sandton</option><option value="HD-204">HD-204 · Rosebank</option></select><div id="caseTimeline" class="timeline-list"><div><b>Case created</b><small>Demo Dispatcher · 09:02</small></div><div><b>Crew assigned</b><small>EMS Dispatch · 09:05</small></div><div><b>Ambulance dispatched</b><small>Field Crew · 09:08</small></div></div><p class="innovation-foot">Example events and times only; not a persistent or verified audit record.</p></article>
@@ -369,25 +364,7 @@ body[data-theme="dark"] .heimdall-chat-form input{background:#102d4e;color:#edf6
 <div id="toast" class="toast" role="status" style="display:none"></div>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" onerror="this.onerror=null;this.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'"></script>
 <script>
-(function(){
-  const key='heimdall-theme';
-  const button=document.getElementById('themeToggle');
-  const label=document.getElementById('themeLabel');
-  const symbol=document.getElementById('themeSymbol');
-  function applyTheme(theme,save){
-    const dark=theme==='dark';
-    document.body.setAttribute('data-theme',dark?'dark':'light');
-    if(label)label.textContent=dark?'Light mode':'Dark mode';
-    if(symbol)symbol.textContent=dark?'☀':'☾';
-    if(button){button.setAttribute('aria-pressed',String(dark));button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');}
-    if(save){try{localStorage.setItem(key,dark?'dark':'light')}catch(e){}}
-  }
-  let initial='light';
-  try{const saved=localStorage.getItem(key);if(saved==='dark'||saved==='light')initial=saved;}catch(e){}
-  applyTheme(initial,false);
-  if(button)button.addEventListener('click',function(){applyTheme(document.body.getAttribute('data-theme')==='dark'?'light':'dark',true);});
-  window.addEventListener('storage',function(event){if(event.key===key&&(event.newValue==='dark'||event.newValue==='light'))applyTheme(event.newValue,false);});
-})();
+
 const accounts={
 ems:{label:'EMS',email:'ems@heimdall.demo',password:'EMSdemo123!',title:'EMS field response workspace',description:'Sample incident assignments and ambulance status for an ambulance driver or field crew.',stats:[['Assigned calls','2'],['Ambulance status','Available'],['Region','Johannesburg'],['Data mode','Demo only']],table:'ems'},
 nurse:{label:'Nurse',email:'nurse@heimdall.demo',password:'Nursedemo123!',title:'Nurse handover workspace',description:'A sample view of incoming arrivals and handover readiness for nursing staff.',stats:[['Incoming patients','3'],['Handover queue','2'],['Readiness','Review'],['Data mode','Demo only']],table:'nurse'},
@@ -439,15 +416,15 @@ function printHandoverSummary(){const c=emergencyCases[0];const w=window.open(''
 .heimdall-chat-panel.open{display:flex!important;visibility:visible;opacity:1;pointer-events:auto}
 .heimdall-chat-form input{min-width:0}
 .heimdall-chat-form button:disabled{opacity:.55;cursor:wait}
-body[data-theme="dark"] .section:not(.map-section):not(.contact-section){color:var(--text-main)}
-body[data-theme="dark"] .section-head p,body[data-theme="dark"] .map-copy p,body[data-theme="dark"] .map-copy .map-note{color:var(--text-muted)}
-body[data-theme="dark"] .story-stage,body[data-theme="dark"] .story-card,body[data-theme="dark"] .exhibit-card,body[data-theme="dark"] .notification-item,body[data-theme="dark"] .dispatch-main,body[data-theme="dark"] .innovation-card{background:var(--surface);border-color:var(--border-main);color:var(--text-main)}
-body[data-theme="dark"] .story-stage h4,body[data-theme="dark"] .exhibit-card h3,body[data-theme="dark"] .dispatch-main h3{color:var(--heading-main)}
-body[data-theme="dark"] .story-stage p,body[data-theme="dark"] .exhibit-card p,body[data-theme="dark"] .dispatch-main p{color:var(--text-muted)}
-body[data-theme="dark"] .heimdall-chat-panel{background:#0c2340;border-color:#315779;color:#e3efff}
-body[data-theme="dark"] .heimdall-chat-messages{background:#081b33}
-body[data-theme="dark"] .heimdall-chat-msg.bot{background:#153b63;color:#e3efff}
-body[data-theme="dark"] .heimdall-chat-form input{background:#081b33;color:#e3efff;border-color:#315779}
+
+
+
+
+
+
+
+
+
 @media(max-width:620px){#mapCanvas{min-height:360px;height:55vh}.heimdall-chat-panel{max-width:calc(100vw - 24px);right:12px;bottom:86px}}
 
 </style></head><body><h1>Heimdall EMS · Demo handover</h1><p><b>Fictional case:</b> '+escapeHtml(c.caseId)+'</p><p><b>Patient:</b> '+escapeHtml(c.name+' '+c.surname)+' (demo only)</p><p><b>Area:</b> '+escapeHtml(c.address)+'</p><p><b>Priority:</b> '+escapeHtml(c.priority)+'</p><p><b>Medical aid:</b> '+escapeHtml(c.medAid)+' (unverified demo value)</p><h2>Handover checklist</h2><ul><li>Patient details prepared</li><li>Receiving team notified</li><li>Handover acknowledged</li></ul><p class="note">Fictional student prototype output. Not a clinical record. Do not use for real care or enter real patient data.</p><script>window.onload=()=>window.print()<\/script>
@@ -467,13 +444,13 @@ function initMap(){
  if(!canvas||!window.L){if(canvas)canvas.innerHTML='<div style="padding:24px"><strong>Map library unavailable.</strong><p>Check your connection and refresh, or use the Google Maps link in this section.</p></div>';return}
  if(map){map.invalidateSize();return}
  try{
-  map=L.map('mapCanvas',{preferCanvas:true}).setView([-26.2041,28.0473],11);
+  map=L.map('mapCanvas',{preferCanvas:true}).setView([-26.2041,28.0473],12);
   streetLayer=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19});
   satelliteLayer=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',maxZoom:19});
   let tileFallbackUsed=false;
   streetLayer.on('tileerror',function(){if(tileFallbackUsed||!map||!map.hasLayer(streetLayer))return;tileFallbackUsed=true;streetLayer.off('tileerror');satelliteLayer.addTo(map);const note=document.querySelector('.map-note');if(note)note.textContent='Street-map tiles failed to load; satellite imagery is being tried instead. Internet access is required.';});
-  let alternateTilesUsed=false;satelliteLayer.on('tileerror',function(){if(alternateTilesUsed||!map||!map.hasLayer(satelliteLayer))return;alternateTilesUsed=true;const fallback=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',attribution:'© OpenStreetMap contributors © CARTO',maxZoom:20});fallback.addTo(map);const note=document.querySelector('.map-note');if(note)note.textContent='Using an alternate street-map tile source. An internet connection is required.';});
-  streetLayer.addTo(map);markersLayer=L.layerGroup().addTo(map);
+  let alternateTilesUsed=false;satelliteLayer.on('tileerror',function(){if(alternateTilesUsed||!map||!map.hasLayer(satelliteLayer))return;alternateTilesUsed=true;if(map.hasLayer(satelliteLayer))map.removeLayer(satelliteLayer);streetLayer.addTo(map);const fallback=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',attribution:'© OpenStreetMap contributors © CARTO',maxZoom:20});fallback.addTo(map);const note=document.querySelector('.map-note');if(note)note.textContent='Satellite imagery failed to load; using an alternate street-map source. Internet access is required.';});
+  satelliteLayer.addTo(map);markersLayer=L.layerGroup().addTo(map);
   L.marker([-26.1929,28.0341]).addTo(markersLayer).bindPopup('<b>Ambulance A · DEMO</b><br>Illustrative location — not live tracking');
   L.marker([-26.2041,28.0473]).addTo(markersLayer).bindPopup('<b>Sample hospital · DEMO</b><br>Illustrative location');
   L.marker([-26.1367,28.0573]).addTo(markersLayer).bindPopup('<b>Incident DEMO-101</b><br>Sample incident — not a real emergency');
@@ -485,27 +462,9 @@ function initMap(){
 function loadMap(){if(window.L){initMap();return}const fallback=document.createElement('script');fallback.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';fallback.onload=initMap;fallback.onerror=()=>{const canvas=document.getElementById('mapCanvas');if(canvas)canvas.innerHTML='<div style="padding:24px"><strong>Map library unavailable.</strong><p>Check your internet connection or use the Google Maps link in this section.</p></div>'};document.head.appendChild(fallback)}
 function addCaseMarker(c){if(!map||!markersLayer)return;L.marker([c.lat,c.lng]).addTo(markersLayer).bindPopup('<b>'+escapeHtml(c.caseId)+'</b><br>'+escapeHtml(c.name+' '+c.surname)+'<br>'+escapeHtml(c.address)+'<br>Fictional demo case — not live tracking')}
 function setMapLayer(type){if(!map||!streetLayer||!satelliteLayer)return;const satellite=type==='satellite';const chosen=satellite?satelliteLayer:streetLayer,other=satellite?streetLayer:satelliteLayer;if(map.hasLayer(other))map.removeLayer(other);chosen.addTo(map);const satBtn=document.getElementById('satBtn'),streetBtn=document.getElementById('streetBtn');if(satBtn)satBtn.classList.toggle('active',satellite);if(streetBtn)streetBtn.classList.toggle('active',!satellite);setTimeout(()=>map&&map.invalidateSize({pan:false}),100)}
+function resetJohannesburgMap(){if(!map){loadMap();return}map.setView([-26.2041,28.0473],12);setMapLayer('satellite');setTimeout(()=>map&&map.invalidateSize({pan:false}),150)}
 window.addEventListener('load',()=>{loadMap();setTimeout(()=>{if(map)map.invalidateSize({pan:false})},500)});
 window.addEventListener('resize',()=>{if(map)setTimeout(()=>map&&map.invalidateSize({pan:false}),100)});
-
-const heimdallStory=[
-{title:'Emergency received',text:'A fictional emergency call is logged for a Johannesburg-area location.',image:'https://commons.wikimedia.org/wiki/Special:FilePath/Ambulance_in_South_Africa_01.JPG?width=1200',alt:'Ambulance photographed in South Africa',label:'1 · CALL RECEIVED'},
-{title:'Crew and vehicle assigned',text:'A dispatcher assigns a sample ambulance unit and records the fictional response stage.',image:'https://commons.wikimedia.org/wiki/Special:FilePath/Ambulance_in_South_Africa_02.JPG?width=1200',alt:'South African ambulance vehicle',label:'2 · CREW ASSIGNED'},
-{title:'Crew responds',text:'The field team updates the response stage as the illustrative incident progresses.',image:'https://commons.wikimedia.org/wiki/Special:FilePath/Ambulance_in_South_Africa_03.JPG?width=1200',alt:'Ambulance photographed in South Africa',label:'3 · EN ROUTE'},
-{title:'Hospital notified',text:'The receiving hospital reviews the fictional incoming case and prepares for handover.',image:'https://commons.wikimedia.org/wiki/Special:FilePath/Ambulance_in_South_Africa_04.JPG?width=1200',alt:'Emergency ambulance in a South African setting',label:'4 · HOSPITAL ALERTED'},
-{title:'Handover completed',text:'The crew and receiving team complete the fictional handover checklist. A real service would use secure systems and verified records.',image:'https://commons.wikimedia.org/wiki/Special:FilePath/Ambulance_in_South_Africa_05.JPG?width=1200',alt:'South African ambulance',label:'5 · HANDOVER'}
-];
-let heimdallStoryIndex=0;
-function updateDispatchStage(id,stage){const el=document.getElementById('dispatchFeedback');if(el)el.textContent=id+' updated to “'+stage+'” in this interactive demo only.';const log=document.getElementById('auditLog');if(log){const row=document.createElement('div');const time=document.createElement('time');time.textContent='Just now · demo';const detail=document.createElement('span');detail.textContent='Case '+id+' stage changed to '+stage;const who=document.createElement('b');who.textContent='Dispatcher';row.append(time,detail,who);log.prepend(row);while(log.children.length>5)log.lastElementChild.remove();}}
-function updateHandover(){const boxes=Array.from(document.querySelectorAll('.handover-checks input'));const n=boxes.filter(x=>x.checked).length;const bar=document.getElementById('handoverProgress');const status=document.getElementById('handoverStatus');if(bar)bar.style.width=(n/boxes.length*100)+'%';if(status)status.textContent=n+' of '+boxes.length+' handover steps completed'+(n===boxes.length?' · Demo handover complete':'');}
-function simulateOfflineSave(){const title=document.getElementById('offlineTitle');const desc=document.getElementById('offlineDesc');if(title)title.textContent='Demo update saved locally in this page';if(desc)desc.textContent='Refresh clears this state · no secure offline storage';}
-function simulateSync(){const title=document.getElementById('offlineTitle');const desc=document.getElementById('offlineDesc');if(title)title.textContent='Sync preview complete';if(desc)desc.textContent='Illustrative only · no server or network sync occurred';}
-function setFleet(select,id){const count=Array.from(document.querySelectorAll('.fleet-list select')).filter(x=>x.value==='Available').length;const feedback=document.getElementById('fleetFeedback');const metric=document.getElementById('fleetAvailableCount');if(feedback)feedback.textContent='Fleet status updated for '+id.toUpperCase()+': '+select.value+' · demo only';if(metric)metric.textContent=count+' / 3';}
-function updateAidDemo(){const sel=document.getElementById('aidDemo');const badge=document.getElementById('aidBadge');if(!sel||!badge)return;const v=sel.value;badge.className='aid-demo-badge '+(v==='Active'?'aid-active':v==='Not active'?'aid-inactive':'aid-pending');badge.textContent='● '+(v==='Active'?'Active medical aid':v==='Not active'?'No active medical aid':'Pending verification');}
-function renderHeimdallStory(){const s=heimdallStory[heimdallStoryIndex];const number=document.getElementById('storyNumber'),kicker=document.getElementById('storyKicker'),title=document.getElementById('storyTitle'),copy=document.getElementById('storyText');if(!s||!title)return;if(number)number.textContent=String(heimdallStoryIndex+1).padStart(2,'0');if(kicker)kicker.textContent='STEP '+(heimdallStoryIndex+1)+' OF '+heimdallStory.length;if(title)title.textContent=s.title;if(copy)copy.textContent=s.text;const photo=document.getElementById('storyImage');if(photo){photo.onload=()=>{photo.style.opacity='1';photo.dataset.loaded='true'};photo.onerror=()=>{photo.style.opacity='1';photo.alt='South African ambulance photo could not load. Check your internet connection.';photo.removeAttribute('src')};photo.style.opacity='.35';photo.src=s.image;photo.alt=s.alt;}const label=document.getElementById('storyImageLabel');if(label)label.textContent=s.label+' · FICTIONAL SCENARIO';document.querySelectorAll('#storyDots span').forEach((d,i)=>d.classList.toggle('active',i===heimdallStoryIndex));const prev=document.querySelector('.story-controls button:first-child'),next=document.querySelector('.story-controls button:last-child');if(prev)prev.setAttribute('aria-label','Previous emergency stage');if(next)next.setAttribute('aria-label','Next emergency stage');}
-function moveStory(delta){heimdallStoryIndex=(heimdallStoryIndex+delta+heimdallStory.length)%heimdallStory.length;renderHeimdallStory();}
-document.addEventListener('DOMContentLoaded',renderHeimdallStory);
-
 
 /* Progressive scroll reveals; content remains visible if observers are unavailable */
 (function(){
@@ -521,18 +480,7 @@ document.addEventListener('DOMContentLoaded',renderHeimdallStory);
 })();
 
 
-/* Lightweight local FAQ chatbot; initialize after its floating chat panel exists in the DOM */
-document.addEventListener('DOMContentLoaded',function(){const launch=document.getElementById('heimdallChatLaunch'),panel=document.getElementById('heimdallChatPanel'),close=document.getElementById('heimdallChatClose'),form=document.getElementById('heimdallChatForm'),input=document.getElementById('heimdallChatInput'),messages=document.getElementById('heimdallChatMessages');if(!launch||!panel||!form||!input||!messages)return;function openChat(){panel.classList.add('open');launch.setAttribute('aria-expanded','true');input.focus()}function closeChat(){panel.classList.remove('open');launch.setAttribute('aria-expanded','false');launch.focus()}launch.addEventListener('click',()=>panel.classList.contains('open')?closeChat():openChat());close.addEventListener('click',closeChat);document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open'))closeChat()});function addMessage(text,who){const el=document.createElement('div');el.className='heimdall-chat-msg '+who;el.textContent=text;messages.appendChild(el);messages.scrollTop=messages.scrollHeight}function answer(q){const x=q.toLowerCase().replace(/[^a-z0-9\s-]/g,' ').replace(/\s+/g,' ').trim();const go=id=>{const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})};if(/\b(hi|hello|hey|good morning|good afternoon|good evening)\b/.test(x))return 'Hello! 👋 Welcome to Heimdall EMS. I’m Dr. Heimdall, your demo guide. Ask me a question about the website, its roles, patient portal, dispatch, or features.';if(/\b(thank|thanks|thank you)\b/.test(x))return 'You’re welcome! 💙 You can ask me another FAQ at any time.';if(/\b(who made|creator|developer|student|project credit|who built)\b/.test(x))return 'Heimdall EMS is a marketing-led student design concept built as a third-year Marketing student portfolio project. It demonstrates a possible EMS coordination workflow; it is not a live medical service.';if(/\b(what is heimdall|what does heimdall|about heimdall|purpose|why was it made|what is this website|about the project)\b/.test(x)){go('about');return 'Heimdall EMS is a website concept for coordinating emergency dispatch, ambulance crews, receiving nurses, and hospital administrators. The goal is to show how emergency-case information could be shared more clearly across roles.'}if(/\b(four roles|roles|user types|who can use|administrator|nurse|hospital admin|ems crew)\b/.test(x))return 'There are four demo roles: (1) EMS Crew — view assigned cases and update response stages; (2) Nurse / Receiving Team — review incoming cases and prepare handover; (3) EMS Admin — review incidents and coordinate demo fleet/dispatch; (4) Hospital Admin — view the receiving-side overview. These are demonstration views, not secure role-based accounts.';if(/\b(sign in|sign-in|login|log in|password|credentials|account|register|registration)\b/.test(x)){go('portal');return 'To explore a role, scroll to the role portals and choose the relevant demo role. Any sample sign-in on this site is front-end demonstration logic only; there are no real accounts, secure authentication, or production user records. Use fictional information only.'}if(/\b(patient portal|patient details|patient information|next of kin|next-of-kin|emergency contact|autosave|auto save|save my details|personal details)\b/.test(x))return 'The patient-details area illustrates a proposed workflow for patient information and next-of-kin contact details. Any saving is limited to the current browser/page demo and is not a secure patient record system. Refreshing may clear demo state. Do not enter real patient, medical, or contact information.';if(/\b(medical aid|medical-aid|medical insurance|insurance|verified|verification|verify|aid status|scheme)\b/.test(x))return 'Medical-aid status is a sample badge to demonstrate possible states such as active, pending, or not active. Heimdall does not connect to medical schemes or verify real membership. Treat every displayed status as fictional demo data.';if(/\b(create|new|add|submit|report|log)\b.*\b(case|incident|emergency)\b|\b(emergency case|case form|incident form|create a case)\b/.test(x))return 'The case form is a demonstration for creating a fictional emergency case. Use a demo ID and fictional details; the example case can appear in the relevant on-page demo views during that session. The information is held in page memory and may disappear on refresh—do not use it for a real emergency.';if(/\b(dispatch|ambulance|fleet|vehicle|assign|response stage|status update|en route|tracking|gps|live location)\b/.test(x))return 'The EMS Admin/dispatch demo illustrates reviewing fictional incidents, coordinating sample ambulance units, and updating response stages. Map pins and vehicle positions are illustrative only: there is no live GPS tracking, real dispatch, or connection to emergency crews.';if(/\b(map|johannesburg|location|satellite|street view|marker|pin|directions)\b/.test(x)){go('map');return 'The interactive map shows illustrative Johannesburg-area locations and sample incident pins. You can switch between the available map layers and explore markers, but these are not live ambulance locations and must not be used for emergency navigation.'}if(/\b(walkthrough|scenario|fictional emergency|emergency demo|steps|next step|photos|pictures)\b/.test(x)){const section=document.querySelector('.walkthrough-card');if(section)section.scrollIntoView({behavior:'smooth',block:'center'});return 'The “Follow one fictional emergency” walkthrough demonstrates five stages: emergency received, crew and vehicle assigned, crew responds, hospital notified, and handover completed. Use the Next step control to move through it. Images and case details are illustrative.'}if(/\b(notifications|notification|audit|timeline|history|permissions|permission|csv|export|download|print|handover|offline|sync|dark mode|light mode|theme|mobile|phone|responsive)\b/.test(x))return 'The concept includes interactive previews for notifications, an incident timeline/audit log, permissions, sample handover/print and export actions, a crew-friendly mobile layout, and light/dark appearance. These are prototype demonstrations; they do not provide a production audit trail, enforced security permissions, durable offline storage, or server synchronisation.';if(/\b(contact|email|support|message|contact form)\b/.test(x)){go('contact');return 'Scroll to Contact & Support to view the sample contact section. The form is a preview only: it does not send or store messages and no support team is connected to this prototype.'}if(/\b(limits|limitations|real|live|production|secure|privacy|data|backend|database|hospital integration|insurer system)\b/.test(x))return 'Important limitation: this is a student concept prototype using fictional data and browser-side interactions. It is not connected to emergency services, real hospitals, insurers, live GPS, a production database, secure authentication, or a live backend. Do not enter real patient details or rely on it for care.';if(/\b(help|faq|what can you do|what can i ask|questions|features|functionality)\b/.test(x))return 'I can answer FAQs about: what Heimdall is; the four roles; demo sign-in; patient details and next of kin; medical-aid status; creating fictional cases; dispatch and ambulance tracking; the Johannesburg map; the emergency walkthrough; notifications and exports; contact details; and prototype limitations. Ask in your own words or tap a suggested question.';return 'I’m not sure I understood that question yet. I can help with Heimdall’s purpose, the four roles, sign-in, patient/next-of-kin details, medical-aid status, emergency cases, dispatch, map, walkthrough, contact section, or limitations. Try asking “How does medical-aid verification work?” or “Can I track a real ambulance?”'}const chatHistory=[];
-async function send(q){q=(q||'').trim();if(!q)return;addMessage(q,'user');input.value='';const sendButton=form.querySelector('button[type="submit"]');if(sendButton)sendButton.disabled=true;const pending=document.createElement('div');pending.className='heimdall-chat-msg bot';pending.textContent='Dr. Heimdall is thinking…';messages.appendChild(pending);messages.scrollTop=messages.scrollHeight;let reply='';try{const response=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:q,history:chatHistory.slice(-10)})});if(!response.ok)throw new Error('AI endpoint unavailable');const data=await response.json();if(!data.reply)throw new Error('Empty AI response');reply=data.reply;chatHistory.push({role:'user',content:q},{role:'assistant',content:reply});}catch(err){reply=answer(q);if(!reply)reply='Sorry, the AI assistant is not connected yet. Please try one of the FAQ suggestions.';if(location.hostname.endsWith('github.io'))reply+=' This is the built-in FAQ mode on GitHub Pages; full AI answers need the secure API service deployed and configured.';else reply+=' If this keeps happening, check the AI service configuration.';}finally{pending.remove();if(sendButton)sendButton.disabled=false;}addMessage(reply,'bot');}form.addEventListener('submit',e=>{e.preventDefault();send(input.value)});panel.querySelectorAll('[data-chat-question]').forEach(b=>b.addEventListener('click',()=>send(b.getAttribute('data-chat-question'))))});
 </script>
 
-<!-- Floating Heimdall demo assistant: local scripted replies, no live emergency connection -->
-<button class="heimdall-chat-launch" id="heimdallChatLaunch" type="button" aria-label="Open Heimdall assistant chat" aria-expanded="false" aria-controls="heimdallChatPanel"><span class="doctor-avatar" aria-hidden="true">👩‍⚕️</span><svg class="avatar-ecg" viewBox="0 0 140 55" aria-hidden="true"><path d="M2 28 H34 L45 28 L54 8 L67 47 L79 17 L89 28 H138"/></svg><span class="chat-bubble-icon">HEIMDALL</span></button>
-<section class="heimdall-chat-panel" id="heimdallChatPanel" role="dialog" aria-label="Heimdall website assistant" aria-modal="false">
- <header class="heimdall-chat-head"><div class="chat-head-icon doctor-head-avatar" aria-hidden="true">👩‍⚕️</div><div><strong>Dr. Heimdall</strong><small><span class="heimdall-chat-status"></span>Online demo guide</small></div><button class="heimdall-chat-close" id="heimdallChatClose" type="button" aria-label="Close chat">×</button></header>
- <div class="heimdall-chat-messages" id="heimdallChatMessages" aria-live="polite"><div class="heimdall-chat-msg bot">Hi! 👋 I can help you explore the Heimdall EMS concept. Ask about emergency dispatch, the four roles, the fictional emergency walkthrough, or what this prototype can do.</div></div>
- <div class="heimdall-chat-quick" aria-label="Suggested questions"><button type="button" data-chat-question="How does dispatch work?">Dispatch</button><button type="button" data-chat-question="Explain the four roles">Four roles</button><button type="button" data-chat-question="Show me the fictional emergency">Emergency demo</button><button type="button" data-chat-question="What are the limitations?">Limitations</button></div>
- <form class="heimdall-chat-form" id="heimdallChatForm"><input id="heimdallChatInput" type="text" maxlength="300" placeholder="Ask about Heimdall..." autocomplete="off" aria-label="Type a question"><button type="submit" aria-label="Send message">➤</button></form><div class="heimdall-chat-note">AI replies require the secure Heimdall AI service to be deployed. Never use this assistant for emergencies or enter real patient information.</div>
-</section>
 </body>
 </html>
